@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#30143f">
+<title>Happy Birthday Priyanshi 💗</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;color:#fff8ff;font-family:Georgia,serif;background:radial-gradient(circle at 15% 8%,#9c4c89 0,transparent 30%),radial-gradient(circle at 90% 35%,#65419a 0,transparent 35%),linear-gradient(145deg,#1c1030,#431b53 55%,#1c1030);overflow-x:hidden}
+#stars{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.star{position:absolute;color:#ffe7fb;animation:twinkle 3s infinite ease-in-out;text-shadow:0 0 12px #ffb8ed}
+@keyframes twinkle{50%{opacity:.18;transform:scale(.6)}} main{position:relative;max-width:900px;margin:auto;padding:22px 16px 60px;text-align:center}
+.hero{min-height:92vh;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.kicker{font:11px Arial;letter-spacing:4px;text-transform:uppercase;color:#ffd5f1}
+h1{font-size:clamp(46px,11vw,88px);line-height:.98;margin:22px 0;color:#ffe0f4;text-shadow:0 0 20px #ff8fd1,0 0 50px #c17aff}
+.script{font-style:italic;font-size:clamp(19px,4vw,27px);color:#f8d9ff}
+button{border:1px solid #ffd0f0;color:white;background:linear-gradient(110deg,#b34e9e,#7444a7);padding:14px 23px;border-radius:999px;font-size:15px;cursor:pointer;box-shadow:0 0 25px #e88de777;margin:15px}
+section{margin:30px 0;padding:28px 18px;border:1px solid #f5c9f455;border-radius:25px;background:#ffffff0d;backdrop-filter:blur(8px);box-shadow:0 12px 40px #10051d55}
+h2{font-size:clamp(27px,6vw,40px);color:#ffd7ef;margin:0 0 14px}
+p{font-size:17px;line-height:1.8;color:#f9eaf8}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+figure{margin:0;overflow:hidden;border-radius:19px;border:1px solid #f8c7ee66;background:#5d3975;box-shadow:0 8px 28px #160b28}
+figure img{width:100%;height:330px;object-fit:cover;display:block;transition:transform .5s}
+figure img:hover{transform:scale(1.035)}
+figcaption{padding:12px;color:#ffe0f4;font-style:italic}
+.letter{text-align:left;font-size:18px;line-height:1.9;color:#fff0fb}
+#gift{display:none}.float{font-size:28px;letter-spacing:10px;animation:float 3s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-9px)}} footer{padding:25px;color:#eac8eb;font-size:14px}
+@media(max-width:560px){.gallery{grid-template-columns:1fr}figure img{height:390px}}
+</style></head>
+<body><div id="stars"></div><main>
+<div class="hero">
+<div class="kicker">A little fairytale made just for you</div><div class="float">♡ ✦ ♡</div>
+<h1>Happy Birthday<br>Priyanshi</h1>
+<div class="script">Meri favourite kahaani ki sabse pyaari roshni…</div>
+<p>Aaj ka din tumhari smile ki tarah khoobsurat ho. ✨</p>
+<button onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})">Your little surprise ♡</button>
+</div>
+<section id="gallery"><h2>Beautiful You 💗</h2>
+<p>Some moments, some smiles, and one very special birthday girl.</p>
+<div class="gallery">
+<figure><img src="priyanshi1.png" alt="Priyanshi portrait 1"><figcaption>A little sunshine 🌸</figcaption></figure>
+<figure><img src="priyanshi2.png" alt="Priyanshi portrait 2"><figcaption>Simply lovely ✨</figcaption></figure>
+<figure><img src="priyanshi3.png" alt="Priyanshi portrait 3"><figcaption>That beautiful smile 💕</figcaption></figure>
+<figure><img src="priyanshi4.png" alt="Priyanshi portrait 4"><figcaption>Made of magic 🦋</figcaption></figure>
+<figure><img src="priyanshi5.png" alt="Priyanshi portrait 5"><figcaption>Forever a star 🌟</figcaption></figure>
+</div></section>
+<section><h2>A little birthday letter 💌</h2><div class="letter">
+Happy Birthday, Priyanshi! ❤️<br><br>
+Pata hai, main shayad har baar apni feelings perfect words mein express nahi kar paata, lekin aaj bas itna kehna hai ki tum bahut special ho. Tumhari smile, tumhari baatein aur tumhari chhoti-chhoti khushiyan hamesha precious rahen.<br><br>
+Meri dil se wish hai ki tumhara aane wala har din happiness, confidence, success aur sukoon se bhara ho. Tumhare saare dreams poore hon, tum hamesha apni roshni ke saath aage badhti raho aur tumhari smile kabhi kam na ho.<br><br>
+Aaj ka din tumhari tarah hi magical ho. Keep shining, keep smiling. You deserve all the beautiful things life has to offer. ✨<br><br>
+With lots of love,<br><b>Chandra 💗</b>
+</div></section>
+<section><h2>One last little surprise…</h2><p>Ek chhota sa message, sirf tumhare liye.</p>
+<button onclick="document.getElementById('gift').style.display='block';this.style.display='none'">Tap to open 🎁</button>
+<div id="gift"><div class="float">💖 ✨ 💖</div><h2>You are one of a kind, Priyanshi!</h2><p>May your days be bright, your dreams come true, and your heart always find reasons to smile. Happy Birthday once again! 🦋</p></div>
+</section><footer>Made with ♡ by Chandra · 24 November</footer></main>
+<script>
+const sky=document.getElementById('stars');for(let i=0;i<55;i++){let s=document.createElement('span');s.className='star';s.textContent=Math.random()>.5?'✦':'♡';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.fontSize=(10+Math.random()*16)+'px';s.style.animationDelay=Math.random()*3+'s';sky.appendChild(s)}
+</script></body></html>
